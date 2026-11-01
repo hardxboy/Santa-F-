@@ -1,2 +1,74 @@
-*{box-sizing:border-box}:root{--dark:#191916;--cream:#f3efe6;--paper:#fffdf8;--gold:#c7a45f;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:#282720;font-family:var(--sans)}a{color:inherit;text-decoration:none}.top{height:30px;background:#111;color:#c7b78e;text-align:center;padding:8px;font-size:8px;letter-spacing:.18em}header{height:84px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:var(--paper);position:sticky;top:0;z-index:5;border-bottom:1px solid #e8e2d7}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.17em;font-size:14px}.brand b{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;font:20px var(--serif);color:#9b793f}.brand small{display:block;font-size:8px;letter-spacing:.22em;margin-top:4px;color:#8a806c}nav{display:flex;align-items:center;gap:28px;font-size:11px;font-weight:600}nav>a:not(.navcta){color:#57564f}.navcta{background:var(--dark);color:white;padding:14px 18px}.toggle{display:none}.hero{height:min(750px,78vw);min-height:640px;position:relative;display:flex;align-items:center;color:white;background:#222}.heroimg{position:absolute;inset:0;background:linear-gradient(90deg,#111e 0%,#111b 48%,#1112),url('assets/fachada.jpeg') center/cover}.herotxt{position:relative;margin-left:11%;max-width:650px;padding:60px 20px 70px 0}.eyebrow{font-size:9px;letter-spacing:.2em;color:var(--gold);font-weight:700;margin:0 0 23px}.dark{color:#9b793f}h1,h2{font:500 clamp(40px,5vw,65px)/1.1 var(--serif);letter-spacing:-.03em;margin:0}h1{font-size:clamp(50px,6.5vw,86px)}h1 i,h2 i{color:var(--gold);font-weight:500}.herotxt>p:not(.eyebrow){font-size:14px;line-height:1.9;color:#e2ded4;max-width:430px;margin:23px 0 30px}.actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap}.btn{display:inline-block;background:var(--gold);color:#1b1a16;padding:17px 21px;font-size:10px;font-weight:700}.phone{font-size:11px;border-bottom:1px solid #aaa;padding-bottom:7px}.rating{margin-top:48px;font-size:11px;color:#d8d4ca}.rating span{color:var(--gold);letter-spacing:2px}.rating b{color:white;margin:0 8px}.caption{position:absolute;bottom:30px;right:6%;font-size:8px;letter-spacing:.2em;color:#eee}.intro{padding:105px 10%;display:grid;grid-template-columns:.7fr 1.3fr 1fr;gap:30px;background:var(--cream)}.intro>small{font-size:9px;letter-spacing:.15em;color:#858176}.intro h2,.heading h2,.ambience h2{font-size:clamp(37px,4vw,56px)}.intro h2 i,.heading h2 i,.ambience h2 i{color:#98753b}.copy{padding-top:34px;color:#69675f;font-size:12px;line-height:1.9}.copy a{display:inline-block;border-bottom:1px solid #b9a575;padding-bottom:7px;margin-top:5px;color:#25241e;font-weight:700;font-size:10px}.menu{padding:110px 10%}.heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:40px}.heading>p{max-width:340px;color:#77756e;font-size:12px;line-height:1.9}.grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;grid-template-rows:280px 280px;grid-auto-rows:280px;gap:13px}.food{position:relative;overflow:hidden;background:#333}.food img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.food:hover img{transform:scale(1.04)}.food:after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#111d)}.food.tall{grid-row:span 2}.food.wide{grid-column:span 2}.food>div{position:absolute;z-index:1;bottom:20px;left:20px;color:white}.food small{font-size:8px;letter-spacing:.17em;color:#e4c98e}.food h3{font:24px var(--serif);margin:8px 0}.food p{font-size:10px;color:#eee;margin:0}.note{font-size:9px;color:#89877e;margin-top:16px}.quote{background:var(--dark);color:white;text-align:center;padding:85px 20px}.quote>span{font:75px var(--serif);color:var(--gold)}.quote h2{font-size:clamp(30px,4vw,48px);margin:20px}.quote i{color:var(--gold)}.quote small{font-size:8px;letter-spacing:.2em;color:#bbb}.ambience{padding:105px 10%;display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center;background:#f1eee7}.ambience>img{width:100%;height:460px;object-fit:cover}.ambience>div>p:not(.eyebrow){font-size:12px;line-height:1.9;color:#6c6a61;margin:22px 0}.ambience ul{list-style:none;padding:0;border-top:1px solid #d6d0c4}.ambience li{padding:14px 0;border-bottom:1px solid #d6d0c4}.ambience li b,.ambience li small{display:block}.ambience li b{font-size:11px}.ambience li small{font-size:10px;color:#777;margin-top:4px}.visit{background:#1b1b18;color:white;padding:85px
+/* ===== Grade de categorias ===== */
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 280px;
+  gap: 14px;
+  padding: 0 30px;
+}
+
+.categoria-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 6px;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+/* degradê escuro para ler o texto */
+.categoria-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.15) 60%, transparent 100%);
+}
+
+.categoria-card > * {
+  position: relative; /* fica acima do degradê */
+}
+
+.categoria-card .rotulo {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #e9c46a;
+  margin-bottom: 6px;
+}
+
+.categoria-card h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.categoria-card p {
+  font-size: 11px;
+  margin: 0;
+}
+
+/* posição de cada card (ordem do HTML: 1 Café, 2 Sucos, 3 Pizzas, 4 Lanches, 5 Pratos, 6 Buffet) */
+.categoria-card:nth-child(1) { grid-column: 1; grid-row: 1 / span 2; } /* Café */
+.categoria-card:nth-child(2) { grid-column: 2; grid-row: 1; }          /* Sucos */
+.categoria-card:nth-child(3) { grid-column: 3; grid-row: 1 / span 2; } /* Pizzas */
+.categoria-card:nth-child(4) { grid-column: 2; grid-row: 2; }          /* Lanches */
+.categoria-card:nth-child(5) { grid-column: 1 / span 2; grid-row: 3; } /* Pratos */
+.categoria-card:nth-child(6) { grid-column: 3; grid-row: 3; }          /* Buffet */
+
+/* celular: uma coluna */
+@media (max-width: 768px) {
+  .categorias-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+    padding: 0 16px;
+  }
+  .categoria-card:nth-child(n) {
+    grid-column: 1;
+    grid-row: auto;
+  }
 }
