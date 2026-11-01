@@ -1,0 +1,8 @@
+SANTA FÉ — PROJETO DEMONSTRATIVO NEXUS
+
+Arquivos: index.html, style.css, script.js e pasta assets com 9 fotos fornecidas.
+
+Para visualizar: extraia o ZIP e abra index.html.
+Para publicar: envie os três arquivos e a pasta assets ao GitHub; importe o repositório na Vercel; deixe o build command vazio e faça Deploy.
+
+Projeto independente, não oficial e sem vínculo/autorização confirmada. Antes de publicar para o estabelecimento, confirme autorização de uso das imagens e marca, cardápio, preços, horários e canais de pedido. O site não possui sistema de pedidos ou pagamento.
